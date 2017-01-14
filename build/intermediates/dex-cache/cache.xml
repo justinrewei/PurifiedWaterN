@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
+        <dex dex="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.0_55946dfa8e0a8047c3e224b397dde4676a96ebae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
+        <dex dex="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_04dd9b1611f068f00fc04c64cfb738ef70da66f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
+        <dex dex="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.0_836fa661a7d9af77c24c5990831c53efce7e34d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
+        <dex dex="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.0_dcd094055ffcb7a665c0f8210d490a0ff4910b19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
+        <dex dex="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.0_8a2831fdb6dd0dc3783b4393fb9200504654b879.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
+        <dex dex="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.0_930e5547fe1681d2b998f9d6835af9a1935ac4a2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
+        <dex dex="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_ec1fa05ce7465e93c0560c9e60ec28b4bb8eee52.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="45f5eda279825ff470e3f51019d374d1ef61e000">
+        <dex dex="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.0_9e94c28fa62bfd0fbc2f7eeea748a8315c7360d5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\justinwei\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.0\support-annotations-24.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.0_6c04403d2329678362db5965ecea1c56ce844878.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
+        <dex dex="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_1e254bf4eb8d1078786fb5b6121d5a974b269795.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
+        <dex dex="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.0_0734c204822a8743b012a1c0b1c196900a824dc0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
+        <dex dex="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.0_b7b79e4d60a709e41a6e9403ef31f0ff7f2d2f16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
+        <dex dex="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_1a18e30f94aec4d485374a362e4080845bfd5979.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
+        <dex dex="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.0_eb61fc68a24afba7570692e22119d5c71ef61ba4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
+        <dex dex="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_8059dfb1589fddca2981eeea776703a95cf938ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\exploded-aar\PurifiedWaterN\openCVLibrary310\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="9a1467212c53d3975f029595455e092fbfb8f179">
+        <dex dex="C:\Users\justinwei\Desktop\CVProjects\PurifiedWaterN\app\build\intermediates\pre-dexed\debug\PurifiedWaterN-openCVLibrary310-unspecified_f809a7beb15b7c67f01611db6d9a10c7da0e3544.jar" />
+    </item>
+
+</items>
