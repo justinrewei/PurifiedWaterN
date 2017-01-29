@@ -1,12 +1,16 @@
 package com.justinwei.purifiedwater;
 
+import android.content.Intent;
 import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.SurfaceView;
+import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.CameraBridgeViewBase;
@@ -15,6 +19,7 @@ import org.opencv.android.LoaderCallbackInterface;
 import org.opencv.android.OpenCVLoader;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
+import org.opencv.core.Size;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.objdetect.CascadeClassifier;
 import org.opencv.videoio.VideoCapture;
@@ -22,13 +27,16 @@ import org.opencv.videoio.VideoCapture;
 import static org.opencv.core.Core.NORM_MINMAX;
 import static org.opencv.core.Core.normalize;
 import static org.opencv.core.CvType.CV_32FC3;
+import static org.opencv.core.CvType.CV_8UC3;
 
-public class MainActivity extends AppCompatActivity  implements CameraBridgeViewBase.CvCameraViewListener2 {
+public class CameraActivity extends AppCompatActivity  implements CameraBridgeViewBase.CvCameraViewListener2 {
 
-    private static String TAG = "MainActivity";
+    private static String TAG = "CameraActivity";
     String faceString, eyeString;           //cascade xml file path
     JavaCameraView javaCameraView;
-    Mat mRgba, imgGray, imgCanny, imgSkin;
+    Mat mRgba, imgGray, imgCanny;
+
+
     private CascadeClassifier faceDetector = null;
 
     BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this){
@@ -59,17 +67,22 @@ public class MainActivity extends AppCompatActivity  implements CameraBridgeView
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         ((TextView)findViewById(R.id.textView)).setText(NativeClass.getMessageFromJNI());
         javaCameraView = (JavaCameraView)findViewById(R.id.java_camera_view);
         javaCameraView.setVisibility(SurfaceView.VISIBLE);
-        javaCameraView.setMaxFrameSize(480, 270);
+        javaCameraView.setMaxFrameSize(280, 200);
         javaCameraView.setCvCameraViewListener(this);
-
 
 
         // Example of a call to a native method
         TextView tv = (TextView) findViewById(R.id.sample_text);
         tv.setText(stringFromJNI());
+    }
+
+    public void changeImageActivity(View view) {
+        Intent intent = new Intent(this, ImageActivity.class);
+        startActivity(intent);
     }
 
 
@@ -114,7 +127,6 @@ public class MainActivity extends AppCompatActivity  implements CameraBridgeView
         imgCanny = new  Mat(height, width, CvType.CV_8UC1);
         faceString = JWOpenCvUtilities.getFilePath("haarcascade_frontalface_alt.xml", this);
         eyeString = JWOpenCvUtilities.getFilePath("haarcascade_eye.xml", this);
-        //imgSkin = OpencvClass.skinDetection(mRgba.getNativeObjAddr());
 
         faceDetector = new CascadeClassifier(faceString);
 
@@ -142,10 +154,10 @@ public class MainActivity extends AppCompatActivity  implements CameraBridgeView
                     OpencvClass.faceDetection(mRgba.getNativeObjAddr(), faceString, eyeString);
                 }
             } else {
-                JWOpenCvUtilities.skinDetection(mRgba);
+                //Imgproc.resize(mRgba,mRgba, new Size(320,280));
+                return JWOpenCvUtilities.skinDetection(mRgba);
             }
         }
-        //System.gc(); //garbage collection
         return mRgba;
     }
 

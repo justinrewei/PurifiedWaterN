@@ -3,7 +3,7 @@
 
 extern "C"
 jstring
-Java_com_justinwei_purifiedwater_MainActivity_stringFromJNI(
+Java_com_justinwei_purifiedwater_CameraActivity_stringFromJNI(
         JNIEnv *env,
         jobject /* this */) {
     std::string hello = "Hello from C++";

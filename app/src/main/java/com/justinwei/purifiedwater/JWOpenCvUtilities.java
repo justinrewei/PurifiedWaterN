@@ -27,12 +27,14 @@ import static org.opencv.core.CvType.CV_32FC3;
 
 public class JWOpenCvUtilities {
 
+
     public static Mat skinDetection(Mat src) {
         //color to fill in where skin is detected
-        double[] cblack = {0, 0, 0, 1};   //Vec3b::all(0);
+        byte[] cblack = {1, 1, 1, 1};   //CHANGE FROM DOUBLE[] TO BYTE[]
 
         Mat dst = src.clone();
 
+        ///*
         Mat src_ycrcb = new Mat(src.rows(), src.cols(), src.type());
         Imgproc.cvtColor(src, src_ycrcb, Imgproc.COLOR_BGR2YCrCb);
 
@@ -46,28 +48,49 @@ public class JWOpenCvUtilities {
         for(int i = 0; i < src.rows(); i++) {
             for(int j = 0; j < src.cols(); j++) {
 
+                /*
                 double B = src.get(i, j)[0];
                 double G = src.get(i, j)[1];
                 double R = src.get(i, j)[2];
-
+                */
                 // apply rgb rule
-                boolean a = R1(R,G,B);
 
+                boolean a = R1(src.get(i, j)[2], src.get(i, j)[1], src.get(i, j)[0]);
+
+
+                 if (a){
+                    //Imgproc.cvtColor(src, src, Imgproc.COLOR_BGR2HSV);
+                    //Core.normalize(src, src, 0.0, 255.0, NORM_MINMAX, CV_32FC3);
+                /*
                 double Y = src_ycrcb.get(i, j)[0];
                 double Cr = src_ycrcb.get(i, j)[1];
                 double Cb = src_ycrcb.get(i, j)[2];
-                // apply ycrcb rule
-                boolean b = R2(Y,Cr,Cb);
+                */
+                    // apply ycrcb rule
+                     System.out.println(src_ycrcb.get(i,j).length);
+                    boolean b = R2(src_ycrcb.get(i, j)[1], src_ycrcb.get(i, j)[2]);
+                    //boolean b = R2(src.get(i, j)[1], src.get(i, j)[2]);
 
+
+                    if (b){
+                        //src.convertTo(src, CV_32FC3);
+
+                /*
                 double H = srcHSV.get(i, j)[0];
                 double S = srcHSV.get(i, j)[1];
                 double V = srcHSV.get(i, j)[2];
-                // apply hsv rule
-                boolean c = R3(H,S,V);
+                */
+                        // apply hsv rule
+                        boolean c = R3(srcHSV.get(i, j)[0], srcHSV.get(i, j)[1], srcHSV.get(i, j)[2]);
+                        //boolean c = R3(src.get(i, j)[0], src.get(i, j)[1], src.get(i, j)[2]);
 
-                if(!(a && b && c))
-                    //this pixel is determined to be skin, so we fill it with black color
-                    dst.put(i, j, cblack);
+                        if ((a && b && c)) {
+                            //this pixel is determined to be skin, so we fill it with black color
+                            dst.put(i, j, cblack);
+                        }
+
+                    }
+                }
             }
         }
 
@@ -80,7 +103,7 @@ public class JWOpenCvUtilities {
         return (e1||e2);
     }
 
-    private static boolean R2(double Y, double Cr, double Cb) {
+    private static boolean R2(double Cr, double Cb) {
         boolean e3 = Cr <= 1.5862*Cb+20;
         boolean e4 = Cr >= 0.3448*Cb+76.2069;
         boolean e5 = Cr >= -4.5652*Cb+234.5652;

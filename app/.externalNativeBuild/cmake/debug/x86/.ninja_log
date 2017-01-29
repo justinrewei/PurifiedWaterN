@@ -1,0 +1,12 @@
+# ninja log v5
+3	113	0	CMakeFiles/native-lib.dir/src/main/jni/com_justinwei_purifiedwater_NativeClass.cpp.o	872e74d9db7a6a1a
+2	240	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	9d947f99c5465fe2
+5	923	0	CMakeFiles/native-lib.dir/src/main/cpp/ImageProcessing.cpp.o	b3db9c1aac77ffab
+1	1070	0	CMakeFiles/native-lib.dir/src/main/jni/com_justinwei_purifiedwater_OpencvClass.cpp.o	5a3e091d5cf63506
+1070	1387	0	../../../../build/intermediates/cmake/debug/obj/x86/libnative-lib.so	53b5fdea2b927c2e
+3	244	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	9d947f99c5465fe2
+244	560	0	../../../../build/intermediates/cmake/debug/obj/x86/libnative-lib.so	53b5fdea2b927c2e
+2	123	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	9d947f99c5465fe2
+123	256	0	../../../../build/intermediates/cmake/debug/obj/x86/libnative-lib.so	53b5fdea2b927c2e
+2	122	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	9d947f99c5465fe2
+122	270	0	../../../../build/intermediates/cmake/debug/obj/x86/libnative-lib.so	53b5fdea2b927c2e
