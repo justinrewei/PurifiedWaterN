@@ -83,6 +83,7 @@ public class CameraActivity extends AppCompatActivity  implements CameraBridgeVi
     public void changeImageActivity(View view) {
         Intent intent = new Intent(this, ImageActivity.class);
         startActivity(intent);
+        finish();
     }
 
 
